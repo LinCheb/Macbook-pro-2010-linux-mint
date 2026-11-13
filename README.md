@@ -53,10 +53,10 @@
 ## 🔩 Matériel
 
 - MacBook Pro 13" mi-2010
-- Clé USB (8 Go minimum)
+- Clé USB (8 Go)
 - Disque dur externe (pour la sauvegarde)
 - Tournevis adaptés (cruciforme 00 + tri-wing Y1 pour la batterie)
-- Image ISO **Linux Mint Xfce** <!-- À COMPLÉTER : version exacte, ex. 22.x -->
+- Image ISO **Linux Mint 22.3 Edition Xfce** <!-- À COMPLÉTER : version exacte, ex. 22.x -->
 
 ---
 
@@ -74,8 +74,7 @@ Une batterie lithium gonflée est **dangereuse** (risque d'incendie). Je l'ai re
 **Précautions :**
 - Débrancher le chargeur avant d'ouvrir.
 - Ne jamais percer, plier ou écraser la batterie.
-- La stocker sur une surface non inflammable en attendant le dépôt.
-- La déposer dans un **point de collecte** ♻️ (magasin, déchèterie), jamais à la poubelle.
+- La déposer dans un **point de collecte** ♻️ (déchèterie), jamais à la poubelle !
 
 ✅ Le Mac fonctionne très bien **sur secteur**, en attendant une batterie neuve.
 
@@ -84,12 +83,7 @@ Une batterie lithium gonflée est **dangereuse** (risque d'incendie). Je l'ai re
 Une clé « bootable » contient un système complet capable de démarrer l'ordinateur sans passer par le disque interne.
 
 1. Télécharger l'ISO **Linux Mint Xfce** sur [linuxmint.com](https://linuxmint.com/download.php).
-2. **Vérifier l'intégrité de l'ISO** (bonne pratique sécurité) :
-   ```bash
-   sha256sum linuxmint-*.iso
-   # Comparer le résultat avec le fichier sha256sum.txt publié par Linux Mint
-   ```
-3. Écrire l'ISO sur la clé avec un outil dédié <!-- À COMPLÉTER : Balena Etcher, Rufus, Ventoy, dd... -->.
+3. Écrire l'ISO sur la clé avec un outil dédié, j'ai utiliser Balena Etcher depuis mon Macbook air. <!-- À COMPLÉTER : Balena Etcher, Rufus, Ventoy, dd... -->.
 
 **Pourquoi Xfce plutôt que Cinnamon ?**
 L'édition Cinnamon était trop lourde pour ce matériel de 2010. Xfce est plus légère : l'affichage est moins joli, mais le système reste rapide.
@@ -175,9 +169,8 @@ Le mot de passe de session protège l'accès **au système**, pas **aux données
 ## 🚧 Limites et prochaines étapes
 
 - [ ] Remplacer la batterie
-- [ ] Chiffrer l'installation Linux (LUKS) <!-- À ADAPTER : supprimer cette ligne si le chiffrement a été coché à l'installation -->
-- [ ] Mettre en place une sauvegarde régulière (ex. Timeshift pour le système)
 - [ ] Remplacer le disque dur par un SSD pour gagner en rapidité
+- [ ] Mettre en place une sauvegarde régulière 
 
 ---
 
@@ -191,12 +184,6 @@ Le mot de passe de session protège l'accès **au système**, pas **aux données
 - Gestion des pilotes propriétaires
 - Durcissement de base : mises à jour, pare-feu UFW
 - Sensibilisation : chiffrement des données au repos
-
----
-
-## 🙏 Remerciements
-
-Merci à **Djoan**, formateur ASR chez **DesCodeuses**, pour les bases qui m'ont permis de me lancer.
 
 ---
 
