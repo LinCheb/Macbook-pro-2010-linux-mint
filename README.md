@@ -120,7 +120,7 @@ La puce Wi-Fi des MacBook de cette époque est une puce **Broadcom**, qui demand
 lspci -nn | grep -i network
 ```
 
-Puis, dans **Menu → Administration → Gestionnaire de pilotes**, installer le pilote Broadcom proposé (`bcmwl-kernel-source`).
+Puis, dans **Menu → Administration → Gestionnaire de pilotes**, installer le pilote Broadcom proposé. Ici, c'est broadcom-sta-dkms, Version 6.30.223.271-23ubuntu 1.3.
 <!-- À VÉRIFIER : coller ici la sortie de lspci et le pilote réellement installé -->
 
 #### 🔄 Mises à jour de sécurité
